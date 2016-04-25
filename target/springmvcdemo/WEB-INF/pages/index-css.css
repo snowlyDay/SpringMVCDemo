@@ -1,0 +1,25 @@
+.main{
+
+
+    position:relative;
+}
+.main h1{
+    font-size:25px;
+    color:#676767;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    padding-top: 19%;
+    text-align: center;
+}
+.main form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 6% 0 9% 0;
+}
+.login-form {
+   background-color: aqua;
+    margin-left: 20%;
+    margin-top: 20%;
+
+}
+

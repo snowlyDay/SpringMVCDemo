@@ -4,7 +4,7 @@
     <persistence-unit name="defaultPersistenceUnit"  transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <properties>
-            <!-- 使用MySQL方言 -->
+            <!-- 使用MySQL -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
             <!-- 数据库连接的URL地址 -->
             <property name="hibernate.connection.url"

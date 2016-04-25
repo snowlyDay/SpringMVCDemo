@@ -21,13 +21,13 @@
 </head>
 <body>
 <div class="container">
-    <h1>SpringMVC 更新用户信息</h1>
+    <h1>用户信息管理</h1>
     <hr/>
 
     <form:form action="/admin/users/updateP" method="post" commandName="userP" role="form">
         <div class="form-group">
-            <label for="firstName">Nickname:</label>
-            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Enter Nickname:"
+            <label for="firstName">name:</label>
+            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="Enter name:"
                    value="${user.nickname}"/>
         </div>
         <div class="form-group">

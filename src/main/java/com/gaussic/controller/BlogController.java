@@ -28,6 +28,7 @@ public class BlogController {
     @RequestMapping(value = "/admin/blogs", method = RequestMethod.GET)
     public String showBlogs(ModelMap modelMap) {
         List<BlogEntity> blogList = blogRepository.findAll();
+        System.out.print(blogList.size());
         modelMap.addAttribute("blogList", blogList);
         return "admin/blogs";
     }
@@ -67,7 +68,7 @@ public class BlogController {
     // 修改博文内容，页面
     @RequestMapping("/admin/blogs/update/{id}")
     public String updateBlog(@PathVariable("id") int id, ModelMap modelMap) {
-        // 是不是和上面那个方法很像
+
         BlogEntity blog = blogRepository.findOne(id);
         List<UserEntity> userList = userRepository.findAll();
         modelMap.addAttribute("blog", blog);

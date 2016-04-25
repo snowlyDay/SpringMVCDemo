@@ -23,8 +23,14 @@ public class MainController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
+
         return "index";
     }
+   @RequestMapping(value = "/login/{id}" ,method = RequestMethod.PUT)
+   public  String login(@PathVariable("id") String id ,ModelMap modelMap){
+
+    return "admin/blogs";
+   }
 
     @RequestMapping(value = "/admin/users", method = RequestMethod.GET)
     public String getUsers(ModelMap modelMap) {

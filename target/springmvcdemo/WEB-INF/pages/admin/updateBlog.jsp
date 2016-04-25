@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>SpringMVC 修改博客</title>
+    <title>修改博客</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>SpringMVC 修改博客</h1>
+    <h1>修改博客内容</h1>
     <hr/>
     <form:form action="/admin/blogs/updateP" method="post" commandName="blogP" role="form">
         <div class="form-group">
